@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainanchorepane" fx:id="mainAnchorPane" prefHeight="785.0" prefWidth="1261.0" stylesheets="@../css/loginForm.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.culinarySystem.controller.LoginController">
+   <children>
+      <AnchorPane layoutX="177.0" layoutY="94.0" prefHeight="606.0" prefWidth="899.0" style="-fx-background-color: white; -fx-background-radius: 3;" styleClass="circle">
+         <children>
+            <ImageView id="leftPane" fx:id="leftPane" fitHeight="631.0" fitWidth="480.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Screenshot%202024-10-29%20232536.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="529.0" layoutY="159.0" styleClass="login-title" text="Welcome Back to Culinary World!">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField layoutX="577.0" layoutY="239.0" prefHeight="38.0" prefWidth="218.0" promptText="username" styleClass="input-field" />
+            <PasswordField layoutX="580.0" layoutY="312.0" prefHeight="38.0" prefWidth="214.0" promptText="password" styleClass="input-field" />
+            <Button layoutX="620.0" layoutY="397.0" prefHeight="38.0" prefWidth="116.0" styleClass="login-button" text="Log In">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label layoutX="632.0" layoutY="444.0" opacity="0.65" styleClass="forgot-password" text="Forgot password?" />
+            <HBox layoutX="623.0" layoutY="105.0">
+               <children>
+                  <Button prefHeight="27.0" prefWidth="61.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-border-color: purple;" styleClass="nav-button" text="Log In" textFill="PURPLE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button prefHeight="26.0" prefWidth="63.0" style="-fx-border-radius: 0;" styleClass="circle" text="Register" textFill="#fffefe">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" layoutX="597.0" layoutY="523.0" opacity="0.65" prefHeight="18.0" prefWidth="160.0" styleClass="forgot-password" text="Create your  Account -&gt;" />
+            <ImageView fitHeight="61.0" fitWidth="87.0" layoutX="640.0" layoutY="26.0">
+               <image>
+                  <Image url="@../../../../../../../Downloads/C-removebg-preview.png" />
+               </image>
+            </ImageView>
+
+
+         </children>
+      </AnchorPane>
+   </children>
+   <styleClass>
+      <String fx:value="login-pane" />
+      <String fx:value="leftPane" />
+   </styleClass>
+
+</AnchorPane>

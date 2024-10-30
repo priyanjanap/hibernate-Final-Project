@@ -1,0 +1,47 @@
+.leftPane {
+    -fx-background-image: url('image/login.jpg');
+    -fx-background-size: cover;
+}
+
+.logo-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+
+
+.login-pane {
+    -fx-background-color: linear-gradient(to right, #ff8a00, #da1b60);
+    -fx-background-radius: 20;
+    -fx-padding: 20;
+}
+
+.login-title {
+    -fx-font-size: 20px;
+    -fx-text-fill: #ff3e96;
+    -fx-font-weight: bold;
+}
+
+.input-field {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+}
+
+.login-button {
+    -fx-background-color: linear-gradient(to right, indigo, #da1b60);
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-padding: 10 20;
+}
+
+
+
+#facebookIcon, #twitterIcon, #instagramIcon {
+    -fx-fit-width: 20px;
+    -fx-fit-height: 20px;
+}
+.circle{
+    -fx-background-color: linear-gradient( indigo, deeppink);
+    -fx-border-radius: 0;
+
+}

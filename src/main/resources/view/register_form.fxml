@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainanchorepane" fx:id="mainAnchorPane" prefHeight="785.0" prefWidth="1261.0" stylesheets="@../css/registerForm.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.culinarySystem.controller.RegisterController">
+    <children>
+        <AnchorPane layoutX="177.0" layoutY="94.0" prefHeight="606.0" prefWidth="899.0" style="-fx-background-color: white; -fx-background-radius: 3;" styleClass="circle">
+            <children>
+                <ImageView id="leftPane" fx:id="leftPane" fitHeight="631.0" fitWidth="480.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/Screenshot 2024-10-29 232536.png" />
+                    </image>
+                </ImageView>
+
+                <Label layoutX="567.0" layoutY="131.0" styleClass="register-title" text="Join the Culinary World!">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+
+                <TextField layoutX="577.0" layoutY="183.0" prefHeight="38.0" prefWidth="218.0" promptText="Username" styleClass="input-field" />
+
+                <TextField layoutX="577.0" layoutY="235.0" prefHeight="38.0" prefWidth="218.0" promptText="Email" styleClass="input-field" />
+
+                <PasswordField layoutX="577.0" layoutY="289.0" prefHeight="38.0" prefWidth="218.0" promptText="Password" styleClass="input-field" />
+
+                <PasswordField layoutX="578.0" layoutY="341.0" prefHeight="38.0" prefWidth="218.0" promptText="Confirm Password" styleClass="input-field" />
+
+                <Button layoutX="630.0" layoutY="417.0" prefHeight="38.0" prefWidth="116.0" styleClass="register-button" text="Register">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+
+                <Label layoutX="606.0" layoutY="484.0" opacity="0.65" styleClass="already-account" text="Already have an account? Log In" />
+
+                <HBox layoutX="618.0" layoutY="89.0">
+                    <children>
+                        <Button prefHeight="27.0" prefWidth="61.0" style="-fx-border-radius: 5;" styleClass="circle" text="Log In" textFill="#f2eff2">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button prefHeight="27.0" prefWidth="66.0" style="-fx-border-radius: 0; -fx-border-color: #800080;" text="Register" textFill="PURPLE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+
+                <ImageView fitHeight="61.0" fitWidth="87.0" layoutX="638.0" layoutY="15.0">
+                    <image>
+                        <Image url="@../../../../../../../Downloads/C-removebg-preview.png" />
+                    </image>
+                </ImageView>
+
+            </children>
+        </AnchorPane>
+    </children>
+    <styleClass>
+        <String fx:value="register-pane" />
+        <String fx:value="leftPane" />
+    </styleClass>
+</AnchorPane>
